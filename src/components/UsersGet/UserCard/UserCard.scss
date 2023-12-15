@@ -38,31 +38,32 @@
 		text-align: center;
 		max-width: 100%;
 		position: relative;
-
-		.email-hover {
-			position: absolute;
-			color: #fff;
-			max-width: 300px;
-			overflow: hidden;
-			word-wrap: break-word;
-			z-index: 5;
-			top: 80%;
-			left: 50%;
-			transform: translateX(-50%);
-			background: rgba(0, 0, 0, 0.87);
-			border-radius: 4px;
-			padding: 3px 16px;
-		}
-
-		&__info--email,
-		&__info--position {
+		&--email,
+		&--position {
 			max-width: 100%;
-			overflow: hidden;
 			white-space: nowrap;
 			text-overflow: ellipsis;
 		}
-		&__info--email {
+		&--email {
 			cursor: pointer;
+			overflow: hidden;
+
 		}
 	}
+	
+	.email-hover {
+		position: absolute;
+		color: #fff;
+		max-width: 300px;
+		overflow: hidden;
+		word-wrap: break-word;
+		z-index: 5;
+		top: 80%;
+		left: 50%;
+		transform: translateX(-50%);
+		background: rgba(0, 0, 0, 0.87);
+		border-radius: 4px;
+		padding: 3px 16px;
+	}
+
 }
